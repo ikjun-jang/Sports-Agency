@@ -38,7 +38,7 @@ psql -d agency -U postgres -a -f agency.psql
 
 ### Running the server
 
-From within the `./src` directory first ensure you are working using your created virtual environment.
+From within the root directory first ensure you are working using your created virtual environment.
 
 To run the server, execute:
 
@@ -59,7 +59,7 @@ curl --request POST \
   --header 'content-type: application/json' \
   --data '{"grant_type":"password","client_id":"xF3XrLq6kJVBcZbl46cSdpewX8BsP8q7","client_secret":"5N4eoisQ08u3ljfPMymhx-_-exv6xPRYVZjkwGH-mBYNXdlLpTzZcKzaJ-JPC6HP","audience":"agency","username":"executive.director@udacity.com","password":"123abcABC","scope":"openid"}'
 ```
-### GET /Clubs
+### GET /clubs
 - General:
     - Fetches a list of clubs and the corresponding list of players
     - Request Arguments: None
@@ -106,7 +106,7 @@ curl --request POST \
   "total_clubs": 3
 }
 ```
-### GET /Clubs
+### GET /players
 - General:
     - Fetches a list of players and the corresponding club
     - Request Arguments: None
